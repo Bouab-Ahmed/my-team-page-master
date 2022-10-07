@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  margin: 4% 0 0 9%;
+}
+
+.title {
+  font-family: 'PT Serif', serif;
+  font-weight: 900;
+  font-size: 50px;
+  min-width: 30%;
+}
+
+.sub-content {
+  margin-left: 20%;
+  font-family: 'Poppins';
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 5%;
+}
+
+.images-content {
+  display: flex;
+  margin: 5% 0 0 9%;
+  flex-wrap: wrap;
+}
+
+.each-image-content {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2.5%; */
+  width: 20%;
+  margin: 0 50px;
+}
+
+.each-image-content img {
+  width: 100%;
+}
+
+.section1 {
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+}
+
+.section1 span {
+  font-family: 'PT Serif', serif;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin: 0 5px;
+}
+
+.section2 span {
+  font-family: 'Poppins';
+  font-size: 23px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.each-image-content:nth-child(2) {
+  margin-top: 15%;
+}
+
+.each-image-content:nth-child(5) {
+  margin-top: 15%;
+}
+
+@media (max-width: 825px) {
+  .main-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .each-image-content:nth-child(2) {
+    margin-top: 0%;
+  }
+
+  .each-image-content:nth-child(5) {
+    margin-top: 0%;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .sub-content {
+    margin-left: 1%;
+  }
+
+  .images-content {
+    margin-left: 0%;
+    margin-right: 10%;
+    justify-content: space-around;
+  }
+
+  .section1-each-image-content span {
+    font-size: 8px;
+  }
+
+  .section2-each-image-content span {
+    font-size: 12px;
+  }
+
+  .each-image-content:nth-child(2n) {
+    margin-top: 10%;
+  }
+
+  .each-image-content {
+    width: 30%;
+    margin-right: 10px;
+  }
+}
